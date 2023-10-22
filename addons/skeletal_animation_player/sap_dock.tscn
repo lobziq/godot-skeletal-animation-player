@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://bthsxm1w8xjds"]
+
+[ext_resource type="Script" path="res://addons/skeletal_animation_player/sap_dock.gd" id="1_mbw7b"]
+
+[node name="SkeletalAnimationControl" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mbw7b")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="ButtonCreateReset" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Create RESET"
+
+[node name="ButtonInsert" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Insert"
+
+[node name="ButtonCut" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Cut"
+
+[node name="ButtonCopy" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Copy"
+
+[node name="ButtonPaste" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Paste"
+
+[node name="ButtonPasteFlipped" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Paste Flipped"
+
+[node name="ButtonDelete" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Delete"
